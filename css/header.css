@@ -1,39 +1,65 @@
 .page-header {
+    width: 1440px;
+    max-width: 100%;
+    height: 72px;
+    border-bottom: 1px solid var(--cornflower);
+    margin-left: auto;
+    margin-right: auto;
     background-color: #ffffff;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 16px;
+    /* Базові відступи з боків для мобільних */
 }
 
 .logo-header {
     color: #2e2f42;
+    text-decoration: none;
+    font-weight: 700;
+    /* Приклад для логотипу */
+}
+
+.nav-list,
+.contacts-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 40px;
+}
+
+.nav-link,
+.contacts-link {
+    display: flex;
+    align-items: center;
+    height: 72px;
+    /* Посилання клікабельні по всій висоті */
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Плавний ховер */
 }
 
 .nav-link {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
     color: #2e2f42;
-    text-decoration: none;
-}
-
-/* Ховер та фокус для навігації */
-.nav-link:hover,
-.nav-link:focus {
-    color: #404bbf;
-}
-
-.contacts {
-    font-style: normal;
 }
 
 .contacts-link {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-weight: 400;
     color: #434455;
-    text-decoration: none;
 }
 
-/* Ховер та фокус для контактів міняють колір */
+.nav-link:hover,
+.nav-link:focus,
 .contacts-link:hover,
 .contacts-link:focus {
     color: #404bbf;
