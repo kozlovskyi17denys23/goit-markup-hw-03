@@ -29,17 +29,20 @@
 }
 
 .team-list {
+    margin: 0;
+    padding-left: 0;
     display: flex;
     gap: 24px;
 }
 
 .team-img-placeholder {
+    display: block;
     height: 260px;
     background-color: #ccc;
 }
 
 .team-meta {
-    padding: 32px 0;
+    padding: 32px 16px;
 }
 
 .team-meta h3 {
