@@ -1,7 +1,7 @@
 /* 1. Хедер розтягується на всю ширину та не має фіксованої ширини */
 .page-header {
     width: 100%;
-    border-bottom: 1px solid var(--cornflower);
+    border-bottom: 1px solid #e7e9fc;
     background-color: #ffffff;
 }
 
